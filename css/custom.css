@@ -1,0 +1,87 @@
+body {
+    background: #164000;
+}
+
+.reveal {
+    font-family: "museo-sans-1", "museo-sans-2", 'Gill Sans', 'Century Gothic', 'Arial', sans-serif;
+}
+
+.reveal .slides {
+    max-width: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.reveal .slides > section {
+    left: 0;
+    top: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.reveal section img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.reveal section div {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+}
+
+/*********************************************
+ * WIN8 EnterContent TRANSITION
+ *********************************************/
+
+.reveal.enterContent .slides>section,
+.reveal.enterContent .slides>section>section {
+
+    -webkit-transition: -webkit-transform-origin 550ms cubic-bezier(0.1, 0.9, 0.2, 1),
+                        -webkit-transform 550ms cubic-bezier(0.1, 0.9, 0.2, 1),
+                        visibility 50ms cubic-bezier(0.1, 0.9, 0.2, 1),
+                        opacity 50ms cubic-bezier(0.1, 0.9, 0.2, 1);
+/*
+       -moz-transition: -moz-transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        -moz-transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+        -ms-transition: -ms-transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        -ms-transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+         -o-transition: -o-transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        -o-transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+            transition: transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
+                        opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);*/
+}
+
+.reveal.enterContent .slides>section.past {
+    -webkit-transition: -webkit-transform-origin 117ms linear,
+                        -webkit-transform 117ms linear,
+                        visibility 50ms linear,
+                        opacity 50ms linear;
+
+    -webkit-transform: translate(-140px, 0);
+    /*
+       -moz-transform: translate(-150%, 0);
+        -ms-transform: translate(-150%, 0);
+         -o-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);*/
+}
+.reveal.enterContent .slides>section.future {
+    -webkit-transform: translate(600px, 0);
+    /*
+    -webkit-transform: translate(150%, 0);
+       -moz-transform: translate(150%, 0);
+        -ms-transform: translate(150%, 0);
+         -o-transform: translate(150%, 0);
+            transform: translate(150%, 0);*/
+}
